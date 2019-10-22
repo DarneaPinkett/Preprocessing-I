@@ -141,7 +141,7 @@ body {
   color: black;
 }
 .header h1 {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 .navbar {
   overflow: hidden;
@@ -155,13 +155,17 @@ body {
   padding: 14px 20px;
   text-decoration: none;
 }
-@media screen and (max-width: 400px) {
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+@media screen and (max-width: 500px) {
   .navbar a {
     float: none;
     width: 100%;
   }
 }
-.navbar a .right {
+.navbar a.right {
   float: right;
 }
 .row {
@@ -170,7 +174,7 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .row {
     flex-direction: column;
   }
@@ -181,10 +185,13 @@ body {
   background-color: #f1f1f1;
   padding: 20px;
 }
+.side h2 {
+  padding-top: 10px;
+  font-size: 1.875em;
+}
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
 }
 input[type=text],
 textarea {
