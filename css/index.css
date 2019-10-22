@@ -133,21 +133,21 @@ table {
 html,
 body {
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.header {
+.main-container .header {
   padding: 80px;
   text-align: center;
-  background: powderblue;
   color: black;
 }
-.header h1 {
+.main-container .header h1 {
   font-size: 2.5em;
 }
-.navbar {
+.main-container .navbar {
   overflow: hidden;
   background-color: #333;
 }
-.navbar a {
+.main-container .navbar a {
   float: left;
   display: block;
   color: white;
@@ -155,46 +155,43 @@ body {
   padding: 14px 20px;
   text-decoration: none;
 }
-.navbar a:hover {
+.main-container .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
-@media screen and (max-width: 500px) {
-  .navbar a {
+@media (max-width: 500px) {
+  .main-container .navbar a {
     float: none;
     width: 100%;
   }
 }
-.navbar a.right {
+.main-container .navbar a.right {
   float: right;
 }
-.row {
-  display: -ms-flexbox;
+.main-container .row {
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 800px) {
-  .row {
+@media (max-width: 800px) {
+  .main-container .row {
     flex-direction: column;
   }
 }
-.side {
-  -ms-flex: 30%;
+.main-container .side {
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
 }
-.side h2 {
+.main-container .side h2 {
   padding-top: 10px;
   font-size: 1.875em;
 }
-.container {
+.main-container .container {
   border-radius: 5px;
   background-color: #f2f2f2;
 }
-input[type=text],
-textarea {
+.main-container input[type=text],
+.main-container textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -204,7 +201,7 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-input[type=submit] {
+.main-container input[type=submit] {
   background-color: black;
   color: white;
   padding: 12px 20px;
@@ -212,9 +209,11 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-.main {
-  -ms-flex: 70%;
+.main-container .main {
   flex: 70%;
   background-color: white;
   padding: 20px;
+}
+.main-container .main h2 {
+  font-size: 1.875em;
 }
