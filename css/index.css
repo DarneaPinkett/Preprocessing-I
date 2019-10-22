@@ -134,20 +134,12 @@ html,
 body {
   height: 100%;
 }
-
-.main-nav {
-  background-color: #333;
-  overflow: hidden;
-  text-decoration: none;
-}
-
-.main-nav a {
-  color: #f2f2f2;
-  padding: 50px 26px;
-  font-size: 1.3rem;
-  text-decoration: none;
-}
-.main-nav a:hover {
-  background-color: #ddd;
+header {
+  padding: 80px;
+  text-align: center;
+  background: powderblue;
   color: black;
+}
+header h1 {
+  font-size: 40px;
 }
