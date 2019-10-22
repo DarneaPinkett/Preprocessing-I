@@ -143,3 +143,18 @@ header {
 header h1 {
   font-size: 40px;
 }
+navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+navbar a right {
+  float: right;
+}
