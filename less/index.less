@@ -57,7 +57,7 @@ html, body {
     height: 100%;
 }
 
-header {
+.header {
 	padding: 80px;
 	text-align: center;
 	background: powderblue;
@@ -67,7 +67,7 @@ header {
 	}
 }
 
-navbar {
+.navbar {
 	overflow: hidden;
 	background-color: #333;
 	a {
@@ -77,8 +77,29 @@ navbar {
 		text-align: center;
 		padding: 14px 20px;
 		text-decoration: none;
-		right {
+		.right {
 			float: right;
 		}
 	}
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.side {
+	-ms-flex: 30%;
+	flex: 30%;
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+
+.main {
+	-ms-flex: 70%;
+	flex: 70%;
+	background-color: white;
+	padding: 20px;
 }
