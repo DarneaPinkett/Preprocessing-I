@@ -139,6 +139,7 @@ body {
   padding: 80px;
   text-align: center;
   color: black;
+  background: url('https://cdn.pixabay.com/photo/2018/08/24/23/37/raindrop-3629132_1280.jpg');
 }
 .main-container .header h1 {
   font-size: 2.5em;
@@ -213,6 +214,12 @@ body {
   flex: 70%;
   background-color: white;
   padding: 20px;
+}
+.main-container .main th {
+  text-align: left;
+}
+.main-container .main ul li {
+  list-style-type: disc;
 }
 .main-container .main h2 {
   font-size: 1.875em;
